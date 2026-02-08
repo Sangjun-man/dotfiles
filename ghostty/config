@@ -58,6 +58,9 @@ keybind = ctrl+ㅌ=text:\x18
 keybind = ctrl+ㅛ=text:\x19
 keybind = ctrl+ㅋ=text:\x1a
 
+# Korean Alt bindings (한글 입력 상태에서 Option+키 동작)
+keybind = alt+ㅋ=text:\x1bz
+
 # Korean Cmd bindings (한글 입력 상태에서 Cmd+키 동작)
 keybind = super+ㅊ=copy_to_clipboard
 keybind = super+ㅍ=paste_from_clipboard
