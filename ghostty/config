@@ -1,0 +1,67 @@
+# Ghostty Configuration (migrated from iTerm2)
+
+# Theme
+theme = Snazzy
+
+# Font
+font-family = JetBrainsMonoNL Nerd Font Mono
+font-size = 15
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Window
+window-width = 80
+window-height = 25
+
+# Scrollback
+scrollback-limit = 1000
+
+# Korean (Hangul) font mapping
+font-codepoint-map = U+AC00-U+D7AF=Noto Sans Mono CJK KR
+font-codepoint-map = U+1100-U+11FF=Noto Sans Mono CJK KR
+font-codepoint-map = U+3130-U+318F=Noto Sans Mono CJK KR
+font-codepoint-map = U+A960-U+A97F=Noto Sans Mono CJK KR
+
+# macOS Option key as Alt (both sides)
+macos-option-as-alt = true
+
+# Korean Ctrl bindings (한글 입력 상태에서 Ctrl+키 동작)
+# a=ㅁ b=ㅠ c=ㅊ d=ㅇ e=ㄷ f=ㄹ g=ㅎ h=ㅗ i=ㅑ j=ㅓ
+# k=ㅏ l=ㅣ m=ㅡ n=ㅜ o=ㅐ p=ㅔ q=ㅂ r=ㄱ s=ㄴ t=ㅅ
+# u=ㅕ v=ㅍ w=ㅈ x=ㅌ y=ㅛ z=ㅋ
+keybind = ctrl+ㅁ=text:\x01
+keybind = ctrl+ㅠ=text:\x02
+keybind = ctrl+ㅊ=text:\x03
+keybind = ctrl+ㅇ=text:\x04
+keybind = ctrl+ㄷ=text:\x05
+keybind = ctrl+ㄹ=text:\x06
+keybind = ctrl+ㅎ=text:\x07
+keybind = ctrl+ㅗ=text:\x08
+keybind = ctrl+ㅑ=text:\x09
+keybind = ctrl+ㅓ=text:\x0a
+keybind = ctrl+ㅏ=text:\x0b
+keybind = ctrl+ㅣ=text:\x0c
+keybind = ctrl+ㅡ=text:\x0d
+keybind = ctrl+ㅜ=text:\x0e
+keybind = ctrl+ㅐ=text:\x0f
+keybind = ctrl+ㅔ=text:\x10
+keybind = ctrl+ㅂ=text:\x11
+keybind = ctrl+ㄱ=text:\x12
+keybind = ctrl+ㄴ=text:\x13
+keybind = ctrl+ㅅ=text:\x14
+keybind = ctrl+ㅕ=text:\x15
+keybind = ctrl+ㅍ=text:\x16
+keybind = ctrl+ㅈ=text:\x17
+keybind = ctrl+ㅌ=text:\x18
+keybind = ctrl+ㅛ=text:\x19
+keybind = ctrl+ㅋ=text:\x1a
+
+# Korean Cmd bindings (한글 입력 상태에서 Cmd+키 동작)
+keybind = super+ㅊ=copy_to_clipboard
+keybind = super+ㅍ=paste_from_clipboard
+keybind = super+ㅅ=new_tab
+keybind = super+ㅈ=close_surface
+keybind = super+ㅜ=new_window
+keybind = super+ㅂ=quit
