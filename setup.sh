@@ -16,6 +16,7 @@ mkdir -p ~/.config/nvim/lua/config ~/.config/nvim/lua/plugins
 ln -sf "$DOTFILES_DIR/nvim/lua/config/options.lua" ~/.config/nvim/lua/config/options.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/tmux-navigator.lua" ~/.config/nvim/lua/plugins/tmux-navigator.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/obsidian.lua" ~/.config/nvim/lua/plugins/obsidian.lua
+ln -sf "$DOTFILES_DIR/nvim/lua/config/autocmds.lua" ~/.config/nvim/lua/config/autocmds.lua
 
 # ghostty (macOS only)
 if [[ "$(uname)" == "Darwin" ]]; then
