@@ -67,6 +67,8 @@ ln -sf "$DOTFILES_DIR/nvim/lua/config/options.lua" ~/.config/nvim/lua/config/opt
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/tmux-navigator.lua" ~/.config/nvim/lua/plugins/tmux-navigator.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/obsidian.lua" ~/.config/nvim/lua/plugins/obsidian.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/config/autocmds.lua" ~/.config/nvim/lua/config/autocmds.lua
+ln -sf "$DOTFILES_DIR/nvim/lua/plugins/mason.lua" ~/.config/nvim/lua/plugins/mason.lua
+ln -sf "$DOTFILES_DIR/nvim/lua/plugins/vim-visual-multi.lua" ~/.config/nvim/lua/plugins/vim-visual-multi.lua
 
 # ghostty
 echo "[ghostty] Linking config..."
