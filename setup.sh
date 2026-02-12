@@ -70,6 +70,7 @@ ln -sf "$DOTFILES_DIR/nvim/lua/config/autocmds.lua" ~/.config/nvim/lua/config/au
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/mason.lua" ~/.config/nvim/lua/plugins/mason.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/vim-visual-multi.lua" ~/.config/nvim/lua/plugins/vim-visual-multi.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/git-conflict.lua" ~/.config/nvim/lua/plugins/git-conflict.lua
+ln -sf "$DOTFILES_DIR/nvim/lua/plugins/colorscheme.lua" ~/.config/nvim/lua/plugins/colorscheme.lua
 
 # ghostty
 echo "[ghostty] Linking config..."
