@@ -69,6 +69,7 @@ ln -sf "$DOTFILES_DIR/nvim/lua/plugins/obsidian.lua" ~/.config/nvim/lua/plugins/
 ln -sf "$DOTFILES_DIR/nvim/lua/config/autocmds.lua" ~/.config/nvim/lua/config/autocmds.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/mason.lua" ~/.config/nvim/lua/plugins/mason.lua
 ln -sf "$DOTFILES_DIR/nvim/lua/plugins/vim-visual-multi.lua" ~/.config/nvim/lua/plugins/vim-visual-multi.lua
+ln -sf "$DOTFILES_DIR/nvim/lua/plugins/git-conflict.lua" ~/.config/nvim/lua/plugins/git-conflict.lua
 
 # ghostty
 echo "[ghostty] Linking config..."
