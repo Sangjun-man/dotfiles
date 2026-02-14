@@ -69,5 +69,3 @@ keybind = super+ㅈ=close_surface
 keybind = super+ㅜ=new_window
 keybind = super+ㅂ=quit
 
-# SSH 바로 접속 탭 열기
-keybind = super+shift+t=new_tab:ssh sjserver3
