@@ -18,6 +18,9 @@ window-height = 25
 # Scrollback
 scrollback-limit = 1000
 
+# OSC 52 클립보드 허용 (원격 SSH/mosh에서 복사 지원)
+clipboard-write = allow
+
 # Korean (Hangul) font mapping
 font-codepoint-map = U+AC00-U+D7AF=Noto Sans Mono CJK KR
 font-codepoint-map = U+1100-U+11FF=Noto Sans Mono CJK KR
