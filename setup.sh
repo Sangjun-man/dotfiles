@@ -82,6 +82,11 @@ fi
 mkdir -p "$GHOSTTY_DIR"
 ln -sf "$DOTFILES_DIR/ghostty/config" "$GHOSTTY_DIR/config"
 
+# zshenv (Homebrew PATH for non-interactive shells — needed by mosh-server, etc.)
+echo ""
+echo "[zshenv] Linking .zshenv..."
+ln -sf "$DOTFILES_DIR/mosh/.zshenv" ~/.zshenv
+
 # TPM (Tmux Plugin Manager)
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   echo "[tpm] Installing Tmux Plugin Manager..."

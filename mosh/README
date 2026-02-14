@@ -1,0 +1,29 @@
+mosh — SSH 위에서 동작하는 UDP 기반 원격 터미널.
+네트워크 전환/끊김에도 세션이 유지됨.
+
+== 파일 ==
+
+.zshenv
+  non-interactive 셸에서도 /opt/homebrew/bin을 PATH에 추가.
+  mosh가 SSH로 접속 후 mosh-server를 실행할 때 PATH에 없으면 실패하므로 필수.
+  setup.sh가 ~/.zshenv로 심링크함.
+
+== 서버 설치 (수동) ==
+
+  brew install mosh
+
+  # macOS 방화벽이 켜져 있으면 허용 추가
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add /opt/homebrew/bin/mosh-server
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp /opt/homebrew/bin/mosh-server
+
+== 클라이언트 접속 ==
+
+  brew install mosh          # macOS
+  sudo apt install mosh      # Ubuntu/Debian
+
+  mosh user@host             # SSH config의 Host alias 사용 가능
+
+== 알려진 제한 ==
+
+  - truecolor(24bit) 미지원. TERM=xterm-256color로 강제됨.
+    Ghostty 등 truecolor 터미널에서 SSH 대비 색상이 다르게 보일 수 있음.
