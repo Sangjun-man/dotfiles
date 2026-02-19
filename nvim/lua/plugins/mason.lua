@@ -4,6 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "typescript-language-server",
+        "eslint_d",
       },
     },
   },
