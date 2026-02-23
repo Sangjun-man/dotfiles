@@ -82,6 +82,24 @@ fi
 mkdir -p "$GHOSTTY_DIR"
 ln -sf "$DOTFILES_DIR/ghostty/config" "$GHOSTTY_DIR/config"
 
+# claude-aliases.zsh
+echo ""
+CLAUDE_ALIASES="$DOTFILES_DIR/claude-aliases.zsh"
+SOURCE_LINE="[ -f $CLAUDE_ALIASES ] && source $CLAUDE_ALIASES"
+
+if [ -f "$CLAUDE_ALIASES" ]; then
+  echo "✅ claude-aliases.zsh found"
+else
+  echo "⚠️  claude-aliases.zsh not found at $CLAUDE_ALIASES"
+fi
+
+if grep -qF "claude-aliases.zsh" ~/.zshrc 2>/dev/null; then
+  echo "⏭️  Already configured in ~/.zshrc"
+else
+  echo "$SOURCE_LINE" >> ~/.zshrc
+  echo "✅ Added source line to ~/.zshrc"
+fi
+
 # zshenv (Homebrew PATH for non-interactive shells — needed by mosh-server, etc.)
 echo ""
 echo "[zshenv] Linking .zshenv..."
@@ -97,7 +115,9 @@ fi
 
 echo ""
 echo "=== Done ==="
+echo "🎉 Setup complete! Run: source ~/.zshrc"
 echo "Next steps:"
-echo "  1. Restart tmux"
-echo "  2. Press prefix + I in tmux to install plugins"
-echo "  3. Restart Neovim to install plugins"
+echo "  1. source ~/.zshrc  (or open a new terminal)"
+echo "  2. Restart tmux"
+echo "  3. Press prefix + I in tmux to install plugins"
+echo "  4. Restart Neovim to install plugins"
