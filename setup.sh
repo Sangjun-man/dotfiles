@@ -82,23 +82,12 @@ fi
 mkdir -p "$GHOSTTY_DIR"
 ln -sf "$DOTFILES_DIR/ghostty/config" "$GHOSTTY_DIR/config"
 
-# claude-aliases.zsh
+# ai-forge launchers
 echo ""
-CLAUDE_ALIASES="$DOTFILES_DIR/claude-aliases.zsh"
-SOURCE_LINE="[ -f $CLAUDE_ALIASES ] && source $CLAUDE_ALIASES"
-
-if [ -f "$CLAUDE_ALIASES" ]; then
-  echo "✅ claude-aliases.zsh found"
-else
-  echo "⚠️  claude-aliases.zsh not found at $CLAUDE_ALIASES"
-fi
-
-if grep -qF "claude-aliases.zsh" ~/.zshrc 2>/dev/null; then
-  echo "⏭️  Already configured in ~/.zshrc"
-else
-  echo "$SOURCE_LINE" >> ~/.zshrc
-  echo "✅ Added source line to ~/.zshrc"
-fi
+echo "[ai-forge] cdx/cc launchers are now managed by ai-forge install-codex"
+echo "  Install/refresh:"
+echo "    cd /Users/sangjunserver3/Desktop/project/ai-forge"
+echo "    ./scripts/build.sh && ./scripts/install-codex.sh --quiet"
 
 # zshenv (Homebrew PATH for non-interactive shells — needed by mosh-server, etc.)
 echo ""
