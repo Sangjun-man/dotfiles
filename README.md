@@ -58,7 +58,8 @@ SSH/Mosh 접속 시에도 로컬 클립보드와 연동됩니다. Ghostty, Tmux,
 - **창 전환**: `Option+1~9`
 - **세션 전환**: `Option+<` / `Option+>`
 - **Vi 모드**: 복사 모드에서 vi 키 바인딩 사용
-- **플러그인**: TPM, tmux-sensible, vim-tmux-navigator
+- **세션 복원**: `prefix + Ctrl-s` 수동 저장 / `prefix + Ctrl-r` 수동 복원 (15분마다 자동 저장됨, 자동 복원은 비활성)
+- **플러그인**: TPM, tmux-sensible, vim-tmux-navigator, tmux-resurrect, tmux-continuum
 
 ### Ghostty
 
